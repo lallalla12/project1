@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        'head'
+        'content'
+        'footer';
+    gap: 10px;
+}
+
+#head {
+    grid-area: head;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#title h2 {
+    margin: 0;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#li1 ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#li1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+#li1 a:hover{
+    text-decoration-line: underline;
+}
+
+
+#btn1 {
+    display: flex;
+    gap: 10px;
+}
+
+#btn1 input {
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: lightpink;
+    border: none;
+}
+
+#btn1 input:hover{
+    background-color: rgb(252, 210, 216);
+    color: white;
+}
+
+p {
+    display: inline-block;
+}
+
+#write-form {
+    grid-area: content;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#write-form h2 {
+    margin-bottom: 20px;
+}
+
+#write-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#write-form input[type="text"],
+#write-form textarea {
+    width: 865px;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#write-form textarea {
+    height: 200px;
+}
+
+.btn-wrap {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#submit {
+    padding: 10px 30px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: rgb(190, 238, 255);
+    color: white;
+}
+

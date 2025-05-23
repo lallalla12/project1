@@ -14,14 +14,14 @@
     <div class="container">
         <div id="head">
             <div id="title">
-                <h2><a href="../HTML/MAIN.HTML">홈페이지</a></h2>
+                <h2><a href="/">홈페이지</a></h2>
             </div>
 
             <div id="li1">
                 <ul>
-                    <li><a href="../html/인기글.html">인기글 </a></li>
-                    <li><a href="../html/인기글.html">전체글</a></li>
-                    <li><a href="../html/글쓰기.html">글쓰기</a></li>
+                    <li><a href="/best">인기글 </a></li>
+                    <li><a href="">전체글</a></li>
+                    <li><a href="/write">글쓰기</a></li>
                 </ul>
             </div>
 
@@ -34,13 +34,13 @@
         <script>
             // 가입버튼을 누르면 회원가입.html로 이동 (jscript 사용)
             document.getElementById('join').addEventListener('click', function () {
-                window.location.href = '회원가입.html';
+                window.location.href = '/join';
             });
             
             // 로그인 버튼을 누르면 로그인.html으로 이동 (jQuery 사용)
             $(document).ready(function () {
                 $('#login').click(function () {
-                    window.location.href = '로그인.html';
+                    window.location.href = '/login';
                 });
             });
         </script>
@@ -51,15 +51,15 @@
 
             <div class="slider">
                 <div class="slides">
-                    <img src="../img/images.jpg" class="slide" />
-                    <img src="../img/다운로드 (1).jpg" class="slide" />
-                    <img src="../img/다운로드.jpg" class="slide" />
+                    <img src="/resources/img/images.jpg" class="slide" />
+                    <img src="/resources/img/다운로드 (1).jpg" class="slide" />
+                    <img src="/resources/img/다운로드.jpg" class="slide" />
                 </div>
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
             </div>
 
-            <script src="script.js"></script>
+            
             <ul>
                 <li><a href="#"> 글1</a></li>
                 <li><a href="#"> 글2</a></li>
@@ -84,7 +84,7 @@
         const slideImages = document.querySelectorAll('.slide');
         const prevBtn = document.querySelector('.prev');
         const nextBtn = document.querySelector('.next');
-
+        console.log(prevBtn, nextBtn);
         let currentIndex = 0;
         const totalSlides = slideImages.length;
 
