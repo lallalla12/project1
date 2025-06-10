@@ -1,10 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="/resources/css/list.css" >
 <meta charset="UTF-8">
-<title>인기글</title>
+<title>전체글</title>
 </head>
 <body>
 	<div class="container">
@@ -19,6 +20,6 @@
 		</ul>
 	</div>
 	</div>
-
+	
 </body>
 </html>

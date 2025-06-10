@@ -1,0 +1,88 @@
+@charset "UTF-8";
+#head {
+    grid-area: head;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #e9cdcd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#title h2 {
+    margin: 0;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
+}
+
+#li1 ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#li1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+#li1 a:hover {
+    text-decoration-line: underline;
+}
+
+#btn1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#btn span{
+	line-height:50px;
+}
+
+#btn1 form input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(204, 149, 149);
+    border: none;
+    cursor: pointer;
+}
+
+#btn1 form input[type="submit"]:hover {
+    background-color: rgb(199, 173, 173);
+    color: white;
+}
+
+/* 폼 기본 margin 제거해서 텍스트와 버튼 간격 자연스럽게 */
+#btn1 form {
+    margin: 0;
+}
+
+#btn1 input {
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(204, 149, 149);
+    border: none;
+    cursor: pointer;
+}
+
+#btn1 input:hover {
+    background-color: rgb(199, 173, 173);
+    color: white;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+

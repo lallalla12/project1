@@ -58,5 +58,10 @@ public class HomeController {
 		public String write() {
 			return "write";
 		}
+		
+		@GetMapping("/list")
+		public String list() {
+			return "list";
+		}
 	
 }
